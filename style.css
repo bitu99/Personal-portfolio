@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+html{
+    font-size: 62.5%;
+} */
+
+body{
+    font-family: calibri;
+}
+
+.navbar{
+    color: rgb(14, 14, 14);
+    padding: 0 3vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+h1{
+    color: rgba(14, 14, 14, 0.795);
+    /* padding-left: 5vw; */
+    font-size: 2.5vw;
+    /* background-color: blueviolet; */
+}
+
+ul{
+    display: flex;
+    gap: 5vw;
+    list-style: none;
+}
+
+.nav-part2{
+    padding-right: 3vh;
+    /* background-color: rgb(8, 61, 61); */
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.section1{
+    display: flex;
+}
+
+.section1 .box1{
+    font-family: poppins;
+    padding-left: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1vh;
+    width: 50%;
+    height: 90vh;
+    /* background-color: rgb(241, 138, 11); */
+}
+.section1 .intro{
+    font-size: 2.1vh;
+    font-weight: 600;
+}
+.section1 .intro h1{
+    color: rgb(80, 80, 80);
+    margin: 0;
+    padding: 0;
+    font-size: 3.5vw;
+}
+
+.section1 .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 90vh;
+    /* background-color: rgb(29, 17, 3); */
+}
+
+.section1 .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section1 .box2 img{
+    /* width: 30vw; */
+    /* height: auto; */
+    width: 50%;
+    border-radius: 50%;
+    transition: transform .5s linear;
+}
+
+/* .img img{
+
+} */
+
+.section1 img:hover{
+    transform: scale(1.05);
+    /* overflow: hidden; */
+   
+    /* transition-timing-function: linear; */
+}
+
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    .box3{
+        background-color: rgb(49, 49, 49);
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box3 img{
+        margin: 0;
+        padding: 0;
+        box-shadow: 2px 2px 3px rgb(255, 255, 255);
+        width: 50%;
+        transition: transform 0.4s linear;
+    }
+
+    .box3 img:hover{
+        transform: scale(1.05);
+    }
+
+    .box4{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        font-family: poppins;
+        font-size: 2.2vh;
+
+    }
+
+    .box4 button{
+        color: rgb(48, 48, 48);
+        background-color: rgb(255, 255, 255);
+        border: none;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-family: poppins;
+        font-size: 115%;
+        font-weight: 600;
+        transition: transform 0.3s linear;
+        border-radius: 3%;
+    }
+
+    .box4 button:hover{
+        transform: scale(1.05);
+        opacity: 0.85;
+    }
+}
+
+
+.progress-bars{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 0;
+    flex-wrap: wrap;
+}
+
+.progress-bars .bar-box{
+    /* background-color: white; */
+    height: 30%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+.progress-bars .box{
+    content: " ";
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    height: 90%;
+    /* backdrop-filter: blur(6px); */
+
+    background-color: rgb(48,48,48);
+
+
+    border-radius: 20px;
+
+    box-shadow: 35px 35px 68px 0px rgba(48, 48, 48, 0.6), inset -12px -12px 16px 0px rgba(95, 95, 95, 0.774), inset 0px 11px 28px 0px rgba(66, 66, 66, 0.856);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1%;
+    overflow-x: hidden;
+
+    transition: 0.3s linear;
+}
+
+.progress-bars .box .text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 140%;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15%;
+}
+
+.progress-bars .progress-line{
+    width: 85%;
+    height: 2%;
+    /* backdrop-filter: blur(6px); */
+    background-color: rgb(84, 85, 85);
+
+
+    /* border-radius: 100%; */
+
+    /* box-shadow: 35px 35px 68px 0px rgb(226, 219, 219), inset -12px -12px 16px 0px rgba(68, 65, 65, 2.6), inset 0px 11px 28px 0px rgb(255, 255, 255); */
+
+    overflow-x: hidden;
+
+}
+
+
+.progress-bars #progress1{
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress2{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress3{
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress4{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress5{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress6{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress7{
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress8{
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.progress-bars #progress9{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    data-aos: ease;
+}
+
+.progress-bars .box:hover{
+    position: relative;
+    transform: scale(1.07);
+}
+
+
+
+.section4{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(214, 214, 214);
+    /* color: rgb(255, 255, 255); */
+}
+
+.section4 h1{
+    padding-left: 5%;
+    padding-top: 2%;    
+}
