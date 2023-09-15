@@ -8,8 +8,10 @@ html{
     font-size: 62.5%;
 } */
 
-body{
+html, body{
     font-family: poppins;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
@@ -22,10 +24,10 @@ body{
     height: 10vh;
 }
 
-h1{
+.navbar h1{
     color: rgba(14, 14, 14, 0.795);
     /* padding-left: 5vw; */
-    font-size: 2.3vw;
+    font-size: 4vh;
     /* background-color: blueviolet; */
 }
 
@@ -82,7 +84,7 @@ ul{
     /* background-color: rgb(241, 138, 11); */
 }
 
-.box1 .icons{
+.box1 #icons1{
     width:fit-content;
     display: flex;
     position: absolute;
@@ -95,9 +97,13 @@ ul{
     padding-left: 1%;
 }
 
-.box1 .icons button:hover{
+.box1 #icons1 button:hover{
     transition: 0.2s linear;
     opacity: 0.7;
+}
+
+.box2 #icons2{
+    display: none;
 }
 
 #resumeBtn{
@@ -138,7 +144,7 @@ ul{
     padding-right: 9%;
 }
 
-.box1 .icons button{
+.box1 #icons1 button{
     background: none;
 	color: inherit;
 	border: none;
@@ -199,7 +205,7 @@ ul{
     background-color: rgb(48, 47, 47);
     display: flex;
     .box3{
-        background-color: rgb(49, 49, 49);
+        background-color: rgb(48, 48, 48);
         width: 40%;
         height: 100%;
         display: flex;
@@ -272,7 +278,7 @@ ul{
 
 .progress-bars .skill-text{
     /* position: absolute; */
-    font-size: 3.5vw;
+    font-size: 4vh;
     color: rgb(48,48,48);
     margin-left:0;
 }
@@ -429,4 +435,127 @@ ul{
 .section4 h1{
     padding-left: 5%;
     padding-top: 2%;    
+}
+
+
+@media (max-width:600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar h1{
+        position: absolute;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .navbar{
+        height:9.5vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        padding-top: 2%;
+        margin-top: 0;
+        overflow-x: hidden;
+    }
+    .nav-part2{
+        width: 1vw;
+        display: none;
+    }
+
+    .section1{
+        width: 100vw;
+        overflow-x: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        height:90vh;
+        
+    }
+    .section1 .box1{
+        height: 60vh;
+        width: 100vw;
+    }
+    .section1 .box1 .intro h1{
+        font-size: 4vh;
+    }
+    .section1 .box1 #icons1{
+        bottom: 7%;
+    }
+    .section1 .box2{
+        height: 40vh;
+        width: 100vw;
+        top:0;
+        padding-top: 0;
+        position: absolute;
+    }
+    .section1 .box2 .img img{
+        padding-top: 0;
+        width: 30vh;
+    }
+
+    .section2{
+        overflow-x: hidden;
+        height: 130vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section2 .box3{
+        width: 0;
+        
+    }
+
+    .section2 .box3 img{
+        top: 5vh;
+        left: 24%;
+        position:absolute;
+        width: 25vh;
+    }
+
+    .section2 .box4{
+        width: 100vw;
+        height: 80vh;
+        /* padding: 0 2%; */
+    }
+
+    .box4 .about-me-description{
+        padding-top: 80vh;
+    }
+
+    .box1{
+        position: relative;
+    }
+
+    .box1 #icons1{
+        display: none;
+    }
+
+    .box2 #icons2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        background: none;
+        font-size: 4vh;
+        right: 90%;
+        /* margin-right: 7vw; */
+    }
+
+    .box2 #icons2 button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
 }
