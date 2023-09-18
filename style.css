@@ -277,14 +277,19 @@ ul{
     padding-top: 4%;
     padding-bottom: 4%;
     /* position: relative; */
-    border-bottom: 0.1px solid rgb(189, 189, 189);
 }
 
-.progress-bars .skill-text{
+.skill-text{
     /* position: absolute; */
-    font-size: 4vh;
+    /* font-size: 4vh; */
     color: rgb(48,48,48);
     margin-left:0;
+    
+}
+
+.skill-text{
+    padding-left: 10%;
+    margin-top: 15px;
 }
 
 .progress-bars .bar-box{
@@ -560,8 +565,14 @@ ul{
         cursor: pointer;
         outline: inherit;
     }
-    
-    
+      
+}
+
+/* -------section4-css-------- */
+
+.section4-title{
+    padding-left: 10%;
+    top: 5%;
 }
 
 .section4{
@@ -570,6 +581,8 @@ ul{
     /* background-color: yellow; */
     height: 300vh;
 }
+
+
 
 .box6,.box7,.box10 img{
     /* border: 1px solid rgba(48, 48, 48, 0.2); */
@@ -585,6 +598,7 @@ ul{
     height: 100vh;
     display: flex;
     justify-content:center;
+    gap: 40px;
     align-items:center;
     /* background-color: rgb(87, 87, 7); */
 
@@ -600,8 +614,8 @@ ul{
 }  
 
 .project1 .box6{
-    width:60%;
-    height: 80vh;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -614,6 +628,7 @@ ul{
     height:60vh;
     width:max-content;
     margin:0;
+    border-radius: 10px;
 }
 
 /* -------------------------------------- */
@@ -625,6 +640,7 @@ ul{
     display: flex;
     justify-content:center;
     align-items:center;
+    gap: 40px;
     /* background-color: rgb(253, 253, 253); */
 
 }
@@ -639,8 +655,8 @@ ul{
 }  
 
 .project2 .box7{
-    width:60%;
-    height: 80vh;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -653,6 +669,7 @@ ul{
     height:55vh;
     width:max-content;
     margin:0;
+    border-radius: 10px;
 }
 
 /* --------------------------------------- */
@@ -693,3 +710,67 @@ ul{
     width:max-content;
     margin:0;
 }
+
+
+
+/* ---------footer-css---------- */
+footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 48, 48);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100vw; */
+    color: white;
+    overflow: hidden;
+}
+
+.footer-box{
+    display: flex;
+    width: 25%;
+    height: 70%;
+    gap: 5vw;
+}
+
+#footer-box1{
+    padding-left: 10%;
+}
+
+#footer-box1 a{
+    background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+}
+
+#footer-box2 ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+#footer-box2 ul li{
+    padding: 0;
+    margin: 0;
+}
+#footer-box2 a{
+    background: none;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    text-decoration: none;
+}
+
