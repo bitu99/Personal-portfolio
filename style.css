@@ -642,7 +642,7 @@ ul{
     width:60%;
     height: 80vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     /* background-color: rgb(39, 39, 3); */
     padding: 0;
