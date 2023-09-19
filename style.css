@@ -223,6 +223,12 @@ ul{
         box-shadow: 2px 2px 3px rgb(255, 255, 255);
         width: 70%;
         transition: transform 0.4s linear;
+
+        -webkit-border-radius: 50px;
+        border-radius: 10px;
+        background: #D1D8EC;
+        -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+        box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
     }
 
     .box3 img:hover{
