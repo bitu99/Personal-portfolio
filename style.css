@@ -8,7 +8,12 @@ html{
     font-size: 62.5%;
 } */
 
-html, body{
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    scroll-behavior: smooth;
     font-family: poppins;
     margin: 0;
     padding: 0;
@@ -22,6 +27,10 @@ html, body{
     align-items: center;
     justify-content: space-between;
     height: 10vh;
+}
+
+.navbar i{
+    display: none;
 }
 
 .navbar h1{
@@ -440,218 +449,12 @@ ul{
 
 
 
-@media (max-width:750px) {
 
-    body{
-        overflow-x: hidden;
-    }
-
-    .navbar h1{
-        position: absolute;
-        padding-top: 0;
-        margin-top: 0;
-    }
-    
-    .navbar{
-        height:9.5vh;
-        width: 100vw;
-        position: relative;
-        display: flex;
-        padding-top: 2%;
-        margin-top: 0;
-        overflow-x: hidden;
-    }
-    .nav-part2{
-        width: 1vw;
-        display: none;
-    }
-
-    .section1{
-        width: 100vw;
-        overflow-x: hidden;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        height:90vh;
-        
-    }
-    .section1 .box1{
-        height: 60vh;
-        width: 100vw;
-    }
-    .section1 .box1 .intro h1{
-        font-size: 4vh;
-    }
-    
-    .section1 .box1 #icons1{
-        bottom: 7%;
-    }
-    .section1 .box2{
-        height: 40vh;
-        width: 100vw;
-        top:0;
-        padding-top: 0;
-        position: absolute;
-    }
-    .section1 .box2 .img img{
-        padding-top: 0;
-        width: 28vh;
-    }
-
-    .section2{
-        overflow-x: hidden;
-        background-color: rgb(255, 255, 255);
-        height: 130vh;
-        width: 100vw;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    .section2 .box3{
-        width: 0;
-        
-    }
-
-    .section2 .box3 img{
-        width: 28vh;
-        top: 1%;
-        left: 24%;
-        position:absolute;
-        /* width: 30vw; */
-    }
-
-    .section2 .box4{
-        margin-top: 90%;
-        width: 100vw;
-        height: 80vh;
-        /* padding: 0 2%; */
-    }
-
-    .about-me-description button{
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        font: inherit;
-        cursor: pointer;
-        outline: inherit;
-        font-size: 2vh;
-    }
-
-    /* .box4 .about-me-description{
-        padding-top: 8vh; 
-    } */
-
-    .box1{
-        position: relative;
-    }
-
-    .box1 #icons1{
-        display: none;
-    }
-
-    .box2 #icons2{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 4vh;
-        background: none;
-        font-size: 4vh;
-        right: 87%;
-        /* margin-right: 7vw; */
-    }
-
-    .box2 #icons2 button{
-        background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        font: inherit;
-        cursor: pointer;
-        outline: inherit;
-    }
-
-    .progress-bars{
-        height: 200vh;
-    }
-
-    .progress-bars .bar-box{
-        height: 30%;
-        flex-direction: column;
-    }
-
-    .progress-bars .bar-box .box{
-        height: 30%;
-        width: 100%;
-        margin-top: 0;
-        padding-top: 0;
-        margin-bottom: 0;
-    }
-
-    .section4{
-        width: 100vw;
-        height: fit-content;
-    }
-
-    .section4 #project1,#project3{
-        flex-direction: column-reverse;
-    }
-
-    
-    .section4 #project2{
-        flex-direction: column;
-    }
-
-    
-    .footer{
-        height: 60vh;
-        position: relative;
-        padding: 0;
-    }
-
-    .footer .footer-box{
-        padding-top: 0;
-        margin-top: 0;
-        height: 30%;
-        width: 50%;
-    }
-
-    .footer h3{
-        font-weight: 300;
-    }
-
-    .footer ul{
-        gap: 1%;
-    }
-    
-    .footer ul li{
-        font-weight: 100;
-    }
-
-    #footer-box1{
-        margin-bottom: 23vh;
-    }
-
-    #footer-box2{
-        margin-bottom: 23vh;
-    }
-
-    #footer-box3{
-        top: 60%;
-        left: 10%;
-        position: absolute;
-    }
-    
-    /* footer #quick-link{
+/* footer #quick-link{
         content: "";
     } */
       
-}
+
 
 /* -------section4-css-------- */
 
@@ -686,7 +489,7 @@ ul{
     gap: 40px;
     align-items:center;
     /* background-color: rgb(87, 87, 7); */
-
+    
 }
 
 #project1 .box5{
@@ -695,7 +498,7 @@ ul{
     justify-content: flex-end;
     align-items: center;
     /* background-color: rgb(107, 107, 92); */
-
+    
 }  
 
 #project1 .box6{
@@ -727,7 +530,7 @@ ul{
     align-items:center;
     gap: 40px;
     /* background-color: rgb(253, 253, 253); */
-
+    
 }
 
 #project2 .box8{
@@ -736,7 +539,7 @@ ul{
     justify-content: flex-end;
     align-items: center;
     /* background-color: rgb(107, 107, 92); */
-
+    
 }  
 
 #project2 .box7{
@@ -780,8 +583,8 @@ ul{
 }  
 
 #project3 .box10{
-    width:60%;
-    height: 80vh;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -790,10 +593,14 @@ ul{
     margin: 0;
 }
 
-#project3 .box10 img{
+#project3 .box10 img{width:60vw;
+    /* width:max-content; */
+    margin:0;
+    border-radius: 10px;
     width:60vw;
     /* width:max-content; */
     margin:0;
+    border-radius: 10px;
 }
 
 
@@ -801,7 +608,6 @@ ul{
 /* ---------footer-css---------- */
 footer{
     margin: 0;
-    padding: 0;
     background-color: rgb(48, 48, 48);
     height: 40vh;
     display: flex;
@@ -812,6 +618,7 @@ footer{
     /* width: 100vw; */
     color: white;
     overflow: hidden;
+    padding-right: 15vw;
 }
 
 footer h3{
@@ -868,3 +675,280 @@ footer h3{
     text-decoration: none;
 }
 
+
+/* -------------------responsivness---------------------- */
+
+@media (max-width:450px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar h1{
+        /* position: absolute; */
+        font-size: 3.5vh;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    
+    .navbar{
+        height:9.5vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        padding-top: 2%;
+        margin-top: 0;
+        overflow-x: hidden;
+    }
+    .nav-part2{
+        width: 1vw;
+        display: none;
+    }
+    .navbar i{
+        position: absolute;
+        left: 80%;
+        font-size: 3.2vh;
+        display: block;
+    }
+
+    .section1{
+        width: 100vw;
+        overflow-x: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        height:90vh;
+        
+    }
+    .section1 .box1{
+        height: 60vh;
+        width: 100vw;
+    }
+    .section1 .box1 .intro h1{
+        font-size: 4vh;
+    }
+    
+    .section1 .box1 #icons1{
+        bottom: 7%;
+    }
+    .section1 .box2{
+        height: 40vh;
+        width: 100vw;
+        top:0;
+        padding-top: 0;
+        position: absolute;
+    }
+    .section1 .box2 .img img{
+        padding-top: 0;
+        width: 27vh;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        padding-left: 7%;
+        padding-right: 7%;
+        background-color: white;
+        width: 100vw;
+        height:fit-content;
+    }
+
+    .section2 .box3{
+        height: 35vh;
+        width: 100vw;
+        /* padding-bottom: 15%; */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .section2 .box3 img{
+        border-radius: 5px;
+        margin: 0;
+        box-shadow: 2px 2px 3px rgb(255, 255, 255);
+        width: 27vh;
+        transition: transform 0.4s linear;
+        -webkit-border-radius: 50px;
+        border-radius: 10px;
+        background: #ffffff;
+        -webkit-box-shadow: 12px 6px 9px #e7e7e7, -12px -12px 24px #f0f8ff;
+        box-shadow: 12px 6px 9px #c5c5c5, -12px -12px 24px #f0f8ff;
+    }
+    .section2 .box4{
+        padding-top: 0;
+        height: 80vh;
+        width: 100vw;
+        margin-bottom: 5vh;
+    }
+
+    
+    
+
+    .box1{
+        position: relative;
+    }
+
+    .box1 #icons1{
+        display: none;
+    }
+
+    .box2 #icons2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        background: none;
+        font-size: 4vh;
+        right: 87%;
+        /* margin-right: 7vw; */
+    }
+
+    .box2 #icons2 button{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+
+
+    .progress-bars{
+        height: 200vh;
+    }
+
+    .progress-bars .bar-box{
+        height: 30%;
+        flex-direction: column;
+    }
+
+    .progress-bars .bar-box .box{
+        height: 30%;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .section4{
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .section4 .project{
+        height: 80vh;
+        margin-top: 5vh;
+        margin-bottom: 9vh;
+    }
+
+    .section4 h5{
+        font-size: 2.2vh;
+    }
+
+    .section4 #project1,#project3{
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: fit-content;
+
+    }
+
+    
+    .section4 #project2{
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    #project1 .box6 img{
+        width: 90vw;
+    }
+
+    #project2 .box7 img{
+        width: 90vw;
+    }
+
+    #project3 .box10 img{
+        width: 90vw;
+    }
+
+    #project1 .box5{
+        width: 100vw;
+        padding: 3% 5%;
+
+    }
+    #project2 .box8{
+        width: 100vw;
+        padding: 3% 5%;
+    }
+    #project3 .box9{
+        width: 100vw;
+        padding: 3% 5%;
+    }
+
+    .project button{
+        font-size: 2.5vh;
+        background-color: rgb(48,48,48);
+        color:white;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5vh 3vh;
+        margin: 3%;
+    }
+
+    .project button a{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        font-family: poppins;
+        cursor: pointer;
+        outline: inherit;
+        text-decoration: none;
+    }
+
+    
+    .footer{
+        height: 60vh;
+        position: relative;
+        padding: 0;
+    }
+
+    .footer .footer-box{
+        padding-top: 0;
+        margin-top: 0;
+        height: 30%;
+        width: 50%;
+    }
+
+    .footer h3{
+        font-weight: 300;
+    }
+
+    .footer ul{
+        gap: 1%;
+    }
+    
+    .footer ul li{
+        font-weight: 100;
+    }
+
+    #footer-box1{
+        margin-bottom: 23vh;
+    }
+
+    #footer-box2{
+        position: absolute;
+        left: 70%;
+        top: 15%;
+        height: 25vh;
+    }
+
+    #footer-box3{
+        top: 60%;
+        left: 10%;
+        position: absolute;
+    }
+}   
