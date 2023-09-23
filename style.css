@@ -865,9 +865,9 @@ footer h3{
     }
 
     .section2 .box3{
-        height: 35vh;
+        height: 25vh;
         width: 100vw;
-        padding-bottom: 15%;
+        padding-bottom: 2%;
         margin-top: 0;
         margin-bottom: 0;
         padding-left: unset;
@@ -888,10 +888,12 @@ footer h3{
     }
     .section2 .box4{
         padding-top: 0;
-        padding: 2% 7%;
+        /* padding: 0% 7%; */
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-right: 1%;
+        padding-left: 5%;
         height: 80vh;
         width: 100vw;
         margin-bottom: 5vh;
