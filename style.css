@@ -12,6 +12,15 @@ html{
     scroll-behavior:smooth;
 }
 
+button{
+    transition: transform 0.3s linear;
+}
+
+button:hover{
+    opacity: 0.8;
+    transform: scale(1.025);
+}
+
 body{
     scroll-behavior: smooth;
     font-family: poppins;
@@ -40,7 +49,7 @@ body{
     /* background-color: blueviolet; */
 }
 
-ul{
+.navbar ul{
     display: flex;
     gap: 5vw;
     list-style: none;
@@ -81,7 +90,7 @@ ul{
 
 .section1 .box1{
     font-family: poppins;
-    padding-left: 8%;
+    padding-left: 10%; 
     padding-right: 8%;
     display: flex;
     justify-content: center;
@@ -107,7 +116,6 @@ ul{
 }
 
 .box1 #icons1 button:hover{
-    transition: 0.2s linear;
     opacity: 0.7;
 }
 
@@ -126,7 +134,7 @@ ul{
 }
 
 #resumeBtn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 0.9;
 }
 
@@ -138,11 +146,11 @@ ul{
     overflow:hidden;
     border-radius: 5px;
     padding: 1% 5%;
-    background-color: rgb(48,48,48);
+    background-color: rgb(0, 0, 0);
 }
 #resumeBtn a{
     width:10vw;
-    background-color: rgb(48,48,48);
+    background-color: rgb(0, 0, 0);
     color: white;
     text-decoration: none;
     padding: 0;
@@ -211,10 +219,9 @@ ul{
 .section2{
     width: 100%;
     height: 100vh;
-    background-color: rgb(48, 47, 47);
     display: flex;
+    background-color: rgb(255, 255, 255);
     .box3{
-        background-color: rgb(255, 255, 255);
         width: 40%;
         height: 100%;
         display: flex;
@@ -245,15 +252,14 @@ ul{
     }
 
     .box4{
-        background-color: white;
-        color: rgb(48, 48, 48);
+        color: black;
         font-weight: 600;
         display: flex;
         /* justify-content: center; */
         align-items: center;
         width: 60%;
         font-family: poppins;
-        font-size: 2.2vh;
+        font-size: 2.4vh;
         padding: 8%;
         padding-left: 0;
 
@@ -261,7 +267,7 @@ ul{
 
     .box4 button{
         color: white;
-        background-color: rgb(48, 48, 48);
+        background-color: rgb(0, 0, 0);
         border: none;
         font-family: poppins;
         font-weight: 500;
@@ -492,14 +498,18 @@ ul{
     
 }
 
-#project1 .box5{
+#project1 .box5,.box8,.box9{
     width:30%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    position: relative;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
     /* background-color: rgb(107, 107, 92); */
     
 }  
+
 
 #project1 .box6{
     width: fit-content;
@@ -537,7 +547,6 @@ ul{
     width:30%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     /* background-color: rgb(107, 107, 92); */
     
 }  
@@ -570,16 +579,15 @@ ul{
     justify-content:center;
     align-items:center;
     /* background-color: rgb(87, 87, 7); */
-
+    
 }
 
 #project3 .box9{
     width:30%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     /* background-color: rgb(107, 107, 92); */
-
+    
 }  
 
 #project3 .box10{
@@ -593,7 +601,8 @@ ul{
     margin: 0;
 }
 
-#project3 .box10 img{width:60vw;
+#project3 .box10 img{
+    width:60vw;
     /* width:max-content; */
     margin:0;
     border-radius: 10px;
@@ -603,13 +612,15 @@ ul{
     border-radius: 10px;
 }
 
+/* ----project buttons---- */
+
 .project button{
     font-size: 2.5vh;
     background-color: rgb(48,48,48);
     color:white;
     border: none;
     border-radius: 5px;
-    padding: 0.4vh 3vh;
+    padding: 1.4% 8%;
     margin: 1.5%;
     cursor: pointer;
 }
@@ -626,8 +637,53 @@ ul{
     text-decoration: none;
 }
 
+.project-btn{
+    width : 30vh;
+}
 
+.box5,.box8,.box9{
+    padding-top: 0;
+    margin-top: 0;
+    height: fit-content;
+}
 
+#box5-btn2,#box5-btn4,#box5-btn6{
+    left: 5%;
+    top: 200px;
+    /* position: absolute; */
+    font-weight: 600;
+    background-color: white;
+    color: black;
+
+    border: none;  
+    -webkit-border-radius: 50px;
+    border-radius: 5px;
+    background: #ffffff;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 1px 6px 15px #b2b8c9, -1px -1px 2px #f0f8ff;
+}
+
+#box5-btn1,#box5-btn3,#box5-btn5{
+    /* position: absolute; */
+    left: 5%;
+    top: 160px;
+    font-weight: 500;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+    border: none; 
+    -webkit-border-radius: 50px;
+    border-radius: 5px;
+    background: #000000;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 1px 6px 15px #b2b8c9, -1px -1px 2px #f0f8ff;
+}
+
+.project h5{
+    font-size: 2.5vh;
+}
+
+/* ----------------------- */
 
 
 /* ---------footer-css---------- */
@@ -771,44 +827,6 @@ footer h3{
         padding-top: 0;
         width: 27vh;
     }
-    .section2{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100vw;
-        height:fit-content;
-    }
-
-    .section2 .box3{
-        height: 35vh;
-        width: 100vw;
-        /* padding-bottom: 15%; */
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .section2 .box3 img{
-        border-radius: 5px;
-        margin: 0;
-        box-shadow: 2px 2px 3px rgb(255, 255, 255);
-        width: 27vh;
-        transition: transform 0.4s linear;
-        -webkit-border-radius: 50px;
-        border-radius: 10px;
-        background: #ffffff;
-        -webkit-box-shadow: 12px 6px 9px #e7e7e7, -12px -12px 24px #f0f8ff;
-        box-shadow: 12px 6px 9px #c5c5c5, -12px -12px 24px #f0f8ff;
-    }
-    .section2 .box4{
-        padding-top: 0;
-        padding: 1% 7%;
-        height: 80vh;
-        width: 100vw;
-        margin-bottom: 5vh;
-    }
-
-    
-    
-
     .box1{
         position: relative;
     }
@@ -838,6 +856,59 @@ footer h3{
         outline: inherit;
     }
 
+    .section2{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 100vw;
+        height:fit-content;
+    }
+
+    .section2 .box3{
+        height: 35vh;
+        width: 100vw;
+        padding-bottom: 15%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .section2 .box3 img{
+        border-radius: 5px;
+        margin: 0;
+        box-shadow: 2px 2px 3px rgb(255, 255, 255);
+        width: 27vh;
+        transition: transform 0.4s linear;
+        -webkit-border-radius: 50px;
+        border-radius: 10px;
+        background: #ffffff;
+        -webkit-box-shadow: 12px 6px 9px #e7e7e7, -12px -12px 24px #f0f8ff;
+        box-shadow: 12px 6px 9px #c5c5c5, -12px -12px 24px #f0f8ff;
+    }
+    .section2 .box4{
+        padding-top: 0;
+        padding: 2% 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 100vw;
+        margin-bottom: 5vh;
+        font-size: 2.2vh;
+    }
+
+    .section2 .box4 button{
+        color: white;
+        background-color: rgb(48, 48, 48);
+        border: none;
+        font-family: poppins;
+        font-weight: 500;
+        transition: transform 0.3s linear;
+        border-radius: 5px;
+        padding: 2% 8%;
+        font-size: 2.7vh;
+    }
 
     .progress-bars{
         height: 200vh;
@@ -899,16 +970,19 @@ footer h3{
 
     #project1 .box5{
         width: 100vw;
-        padding: 3% 5%;
-
+        padding-left: 15%;
+        padding-right: 4%;
     }
     #project2 .box8{
         width: 100vw;
-        padding: 3% 5%;
+        padding-left: 15%;
+        padding-right: 4%;
     }
     #project3 .box9{
         width: 100vw;
-        padding: 3% 5%;
+        padding-top: 15%;
+        padding-left: 15%;
+        padding-right: 4%;
     }
 
     
