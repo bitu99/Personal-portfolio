@@ -1105,6 +1105,7 @@ footer h3{
         padding-left: unset;
         display: flex;
         justify-content: center;
+        padding-left: unset;
     }
     .section2 .box3 img{
         border-radius: 5px;
