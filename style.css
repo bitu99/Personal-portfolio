@@ -641,7 +641,8 @@ body{
     padding: 0;
     margin: 0;
     /* background-color: yellow; */
-    height: 300vh;
+    height: fit-content;
+    margin-bottom: 5%;
 }
 
 
@@ -870,6 +871,15 @@ footer{
     padding-right: 15vw;
 }
 
+footer ul{
+    list-style: none;
+}
+
+/* footer h3 li{
+    
+    border-width: fit-content;
+} */
+
 footer h3{
     font-weight: 400;
 }
@@ -1033,7 +1043,7 @@ footer h3{
     }
 
     .section2 .box3{
-        height: 25vh;
+        height: 40vh;
         width: 100vw;
         padding-bottom: 2%;
         margin-top: 0;
