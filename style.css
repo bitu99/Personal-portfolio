@@ -260,7 +260,7 @@ body{
         width: 60%;
         font-family: poppins;
         font-size: 2.4vh;
-        padding: 8%;
+        padding: 2%;
         padding-left: 0;
 
     }
@@ -283,11 +283,179 @@ body{
     }
 }
 
+#section3{
+    /* background-color: springgreen; */
+    height: 40vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    gap: 2vw;
+    padding: 1%;
+    position: relative;
+    margin-bottom: 15%;
+}
 
+#section3 #box1{
+    /* background-color: cornflowerblue; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 3%;
+    align-items: center;
+    font-size: 4vh;
+}
+
+#section3 #box2{
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    width: 75%;
+    white-space: nowrap;
+    overflow: auto;
+
+    position: absolute;
+    top: 20%;
+    right: 0;
+    
+}
+
+#box2::-webkit-scrollbar{
+    display: none;
+}
+
+#section3 .skill-box{
+    width: 30vh;
+    height: 30vh;
+    background-color: rgba(243, 243, 243, 0.911);
+    box-shadow: 12px 6px 15px #c2c2c2, -12px -12px 24px #ffffff;
+
+
+
+    /* background-color: rgb(255, 255, 255);
+
+    box-shadow: 35px 35px 68px 0px rgb(218, 218, 218); */
+    /* , inset -12px -12px 16px 0px rgb(255, 255, 255), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.856); */
+
+
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2vh 2vh;
+    position: relative;
+}
+
+.skill-box .s-text{
+    font-size: 4.5vh;
+    font-weight: 500;
+    top: 30%;
+    left: 5%;
+    position: absolute;
+    color: rgb(70, 70, 70);
+
+}
+
+.skill-box .progress-box{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 90%;
+    background-color: #ffffffda;
+    height: 1vh;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#progress1{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 90%;
+}
+#progress2{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 80%;
+
+}
+#progress3{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 70%;
+
+}
+#progress4{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 90%;
+
+}
+#progress5{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 60%;
+
+}
+#progress6{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 20%;
+
+}
+#progress7{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 50%;
+
+}
+#progress8{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 70%;
+
+}
+#progress9{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 70%;
+
+}
+#progress10{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 60%;
+
+}
+#progress11{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 70%;
+
+}
+#progress12{
+    margin: 0;
+    background-color: rgb(75, 75, 75);
+    height:100%;
+    width: 80%;
+
+}
+
+
+
+/* 
 .progress-bars{
     width: 100%;
     height: 100vh;
-    /* background-color: black; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,12 +465,12 @@ body{
     flex-wrap: wrap;
     padding-top: 4%;
     padding-bottom: 4%;
-    /* position: relative; */
+    position: relative;
 }
 
 .skill-text{
-    /* position: absolute; */
-    /* font-size: 4vh; */
+    position: absolute; 
+     font-size: 4vh;
     color: rgb(48,48,48);
     margin-left:0;
     
@@ -314,7 +482,7 @@ body{
 }
 
 .progress-bars .bar-box{
-    /* background-color: white; */
+    background-color: white;
     height: 25%;
     width: 90%;
     display: flex;
@@ -330,14 +498,14 @@ body{
     margin: 0;
     width: 25%;
     height: 95%;
-    /* backdrop-filter: blur(6px); */
+    backdrop-filter: blur(6px);
 
     background-color: rgb(255, 255, 255);
 
 
     border-radius: 20px;
 
-    /* box-shadow: 35px 35px 68px 0px rgba(48, 48, 48, 0.6), inset -12px -12px 16px 0px rgba(95, 95, 95, 0.774), inset 0px 11px 28px 0px rgba(66, 66, 66, 0.856); */
+    box-shadow: 35px 35px 68px 0px rgba(48, 48, 48, 0.6), inset -12px -12px 16px 0px rgba(95, 95, 95, 0.774), inset 0px 11px 28px 0px rgba(66, 66, 66, 0.856);
 
     display: flex;
     flex-direction: column;
@@ -359,13 +527,13 @@ body{
 .progress-bars .progress-line{
     width: 85%;
     height: 5%;
-    /* backdrop-filter: blur(6px); */
+    backdrop-filter: blur(6px);
     background-color: rgb(147 147 147 / 91%);
 
 
     border-radius: 10px;
 
-    /* box-shadow: 35px 35px 68px 0px rgb(226, 219, 219), inset -12px -12px 16px 0px rgba(68, 65, 65, 2.6), inset 0px 11px 28px 0px rgb(255, 255, 255); */
+    box-shadow: 35px 35px 68px 0px rgb(226, 219, 219), inset -12px -12px 16px 0px rgba(68, 65, 65, 2.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 
     overflow: hidden;
 
@@ -446,7 +614,7 @@ body{
 
 .progress{
     background-color: black;
-}
+} */
 
 /* .progress-bars .box:hover{
     position: relative;
@@ -910,6 +1078,19 @@ footer h3{
         border-radius: 5px;
         padding: 2% 8%;
         font-size: 2.7vh;
+    }
+
+    #section3{
+    margin-bottom: 45%;
+        
+    }
+
+    #section3 #box1{
+        font-size: 3vh;
+        width: 40%;
+    }
+    #section3 #box2{
+        width: 60%;
     }
 
     .progress-bars{
