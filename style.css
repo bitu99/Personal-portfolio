@@ -326,21 +326,17 @@ body{
 #section3 .skill-box{
     width: 30vh;
     height: 30vh;
-    background-color: rgba(243, 243, 243, 0.911);
-    box-shadow: 12px 6px 15px #c2c2c2, -12px -12px 24px #ffffff;
-
-
-
-    /* background-color: rgb(255, 255, 255);
-
-    box-shadow: 35px 35px 68px 0px rgb(218, 218, 218); */
-    /* , inset -12px -12px 16px 0px rgb(255, 255, 255), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.856); */
-
+    background-color: rgba(255, 255, 255, 0.911);
 
     display: inline-block;
-    border-radius: 20px;
     margin: 2vh 2vh;
     position: relative;
+    
+    border: none;
+    -webkit-border-radius: 50px;
+    border-radius: 10px;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+    box-shadow: 6px 6px 15px #b2b8c9, -6px -6px 15px #f0f8ff;
 }
 
 .skill-box .s-text{
@@ -367,83 +363,83 @@ body{
 
 #progress1{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 90%;
 }
 #progress2{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 80%;
 
 }
 #progress3{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 70%;
 
 }
 #progress4{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 90%;
 
 }
 #progress5{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 60%;
 
 }
 #progress6{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 20%;
 
 }
 #progress7{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 50%;
 
 }
 #progress8{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 70%;
 
 }
 #progress9{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 70%;
 
 }
 #progress10{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 60%;
 
 }
 #progress11{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 70%;
 
 }
 #progress12{
     margin: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(0, 0, 0);
     height:100%;
     width: 80%;
 
@@ -1161,21 +1157,21 @@ footer h3{
         width: 60%;
     }
 
-    .progress-bars{
-        height: 200vh;
+    #section3 .skill-box{
+        width: 20vh;
+        height: 20vh;
     }
 
-    .progress-bars .bar-box{
-        height: 30%;
-        flex-direction: column;
+    #section3 .skill-box .s-text{
+        font-size: 3vh;
     }
 
-    .progress-bars .bar-box .box{
-        height: 30%;
-        width: 100%;
-        margin-top: 0;
-        padding-top: 0;
+    #section3 .skill-box .progress-box{
+        margin-top: 5%;
         margin-bottom: 0;
+        width: 90%;
+        height: 0.7vh;
+        background-color: lightgrey;
     }
 
     .section4{
