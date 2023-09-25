@@ -1237,10 +1237,12 @@ footer h3{
 
     .section5 form input{
         width: 90vw;
+        font-weight: 100;
     }
 
     .section5 form textarea{
         width: 90vw;
+        font-weight: 100;
     }
     
     .section5 form #submit-btn{
