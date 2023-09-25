@@ -1014,6 +1014,7 @@ footer h3{
         overflow-x: hidden;
         z-index: 2;
     }
+    
     .nav-part2{
         display:none;
     }
@@ -1045,7 +1046,6 @@ footer h3{
         font-size: 2.5vh;
         font-weight: 600;
         font-family: poppins;
-        transition: all 4s ease-in;
     }
     
     .nav-part3 button{
@@ -1071,8 +1071,8 @@ footer h3{
     
     .navbar i{
         position: absolute;
-        left: 90%;
-        font-size: 3.4vh;
+        left: 88%;
+        font-size: 3.9vh;
         display: block;
     }
 
