@@ -1097,21 +1097,23 @@ footer h3{
     }
 
     .section2 .box3{
-        height: 40vh;
+        height: 60vh;
         width: 100vw;
-        padding-bottom: 2%;
+        padding-bottom: 0;
+        padding-left: unset;
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: unset;
         display: flex;
         justify-content: center;
+        align-items: flex-end;
         padding-left: unset;
     }
     .section2 .box3 img{
         border-radius: 5px;
-        margin: 0;
+        margin: unset;
+        padding: unset;
         box-shadow: 2px 2px 3px rgb(255, 255, 255);
-        width: 60vw;
+        width: 65vw;
         transition: transform 0.4s linear;
         -webkit-border-radius: 50px;
         border-radius: 10px;
@@ -1243,6 +1245,7 @@ footer h3{
     
     .section5 form #submit-btn{
         width: 25vw;
+        font-weight: 400;
     }
 
     .footer{
