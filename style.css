@@ -59,6 +59,11 @@ ul{
     list-style: none;
     list-style-type: none;
 }
+
+ li::marker { 
+    content: none; 
+ }
+
 .nav-part2{
     padding-right: 3vh;
     /* background-color: rgb(8, 61, 61); */
