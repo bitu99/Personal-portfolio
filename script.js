@@ -15,6 +15,7 @@ function toggle(){
         navpart2.style.display = "none";
         
         navpart3.style.display = "flex";
+        navpart3.style.width = "50vw";
         navpart3.style.flexDirection = "column";
     }
     else { // if is menuBox hidden, display it
