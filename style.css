@@ -1110,11 +1110,11 @@ footer h3{
         width: 100vw;
     }
     .section1 .intro{
-	    opacity:0.2;
+	    opacity: 1;
 	    transition: opacity o.4s linear;
     }
     .section1 .sec1-img{
-	    opacity:0.2;
+	    opacity: 1;
 	    transition: opacity o.4s linear;
     }
     .section1 .box1 .intro h1{
