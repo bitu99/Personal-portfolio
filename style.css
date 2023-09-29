@@ -1000,7 +1000,7 @@ footer h3{
 
 /* -------------------responsivness---------------------- */
 @media (min-width: 750){
-    .ri-close,.ri-menu-line,.nav-part3{
+    .ri-close,.ri-menu-line{
 	display: none;
     }
 }
@@ -1031,10 +1031,6 @@ footer h3{
     .nav-part2{
         display:none;
     }
-    .nav-part3{
-        height: 50vh;
-        width: 50vh;
-    }
     .nav-part3 ul{
 	list-style: none;
         font-weight: 100;
@@ -1049,7 +1045,7 @@ footer h3{
         border-bottom-left-radius: 50px ;
         position: absolute;
         z-index: 2;
-        right: 0;
+        right: -10%;
         bottom: 80%;
         width: 0;
         height: 40vh;
