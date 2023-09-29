@@ -301,7 +301,7 @@ ul{
     height: 40vh;
     width: 100vw;
     margin: 0;
-    display: flex;
+    display: none;
     gap: 2vw;
     padding: 1%;
     position: relative;
