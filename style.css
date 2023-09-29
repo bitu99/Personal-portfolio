@@ -460,7 +460,7 @@ ul{
 
 
 
-/* 
+
 .progress-bars{
     width: 100%;
     height: 100vh;
@@ -623,12 +623,12 @@ ul{
 
 .progress{
     background-color: black;
-} */
+}
 
-/* .progress-bars .box:hover{
+.progress-bars .box:hover{
     position: relative;
     transform: scale(1.07);
-} */
+}
 
 
 
@@ -1009,7 +1009,10 @@ footer h3{
     }
 }
 @media (max-width:450px) {
-
+    .progress-bars{
+	    display: none;
+    }
+    
     body{
         overflow-x: hidden;
     }
