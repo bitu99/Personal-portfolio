@@ -1046,22 +1046,22 @@ footer h3{
 
     .nav-part3{
 	display: block;
-        border-top-left-radius: 50px ;
-        border-bottom-left-radius: 50px ;
-        position: absolute;
-        z-index: 2;
-        right: -10%;
-        bottom: 80%;
-        width: 0;
-        height: 40vh;
-        background-color: rgba(48, 48, 48);
-        color: white;
-        padding-right: 3vh;
-        /* background-color: rgb(8, 61, 61); */
-        font-size: 2.5vh;
-        font-weight: 600;
-        font-family: poppins;
-        transition: width 0.4s linear;
+    	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	position: absolute;
+	z-index: 2;
+	right: -10%;
+	bottom: 30%;
+	width: 0;
+	height: 55vh;
+	background-color: rgba(48, 48, 48);
+	color: white;
+	padding-right: 3vh;
+	/* background-color: rgb(8, 61, 61); */
+	font-size: 2.8vh;
+	font-weight: 600;
+	font-family: poppins;
+	transition: width 0.4s linear;
     }
     
     .nav-part3 button{
