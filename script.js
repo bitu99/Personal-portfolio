@@ -17,7 +17,7 @@ function toggle() {
     cancelBtn.style.display = "block";
     navpart2.style.display = "none";
     
-    navpart3.style.width = "45vw";
+    navpart3.style.width = "50vw";
     intro.style.opacity = "0.3";
     sec1_img.style.opacity = "0.3";
     icons.style.opacity = "0.3";
