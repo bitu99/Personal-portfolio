@@ -1012,6 +1012,9 @@ footer h3{
     .progress-bars{
 	    display: none;
     }
+    #section3{
+	    display: unset;
+    }
     
     body{
         overflow-x: hidden;
