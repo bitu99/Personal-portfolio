@@ -14,9 +14,7 @@ function toggle(){
         cancelBtn.style.display = "block";
         navpart2.style.display = "none";
         
-        navpart3.style.display = "flex";
         navpart3.style.width = "50vw";
-        navpart3.style.flexDirection = "column";
     }
     else { // if is menuBox hidden, display it
         menuBtn.style.display = "block";
@@ -27,8 +25,8 @@ function toggleOff(){
     if(cancelBtn.style.display == "block") { // if is menuBox displayed, hide it
         cancelBtn.style.display = "none";
         menuBtn.style.display = "block";
-        navpart3.style.display = "none";
-        navpart3.style.flexDirection = "column";
+
+        navpart3.style.width = "0";
     }
     else { // if is menuBox hidden, display it
         cancelBtn.style.display = "block";
