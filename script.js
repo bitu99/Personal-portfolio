@@ -4,6 +4,7 @@ var navpart2 = document.querySelector(".nav-part2");
 var cancelBtn = document.querySelector(".ri-close-fill");
 var intro = document.querySelector(".intro");
 var sec1_img = document.querySelector(".sec1-img");
+var icons = document.querySelector("#icons2");
 
 var isMenuOpen = false; // Use a variable to track the menu's open/close state
 
@@ -19,6 +20,7 @@ function toggle() {
     navpart3.style.width = "45vw";
     intro.style.opacity = "0.3";
     sec1_img.style.opacity = "0.3";
+    icons.style.opacity = "0.3";
 
     isMenuOpen = true; // Update the state
   } else { // If the menu is open, close it
@@ -33,6 +35,7 @@ function toggleOff() {
     navpart3.style.width = "0";
     intro.style.opacity = "1";
     sec1_img.style.opacity = "1";
+    icons.style.opacity = "1";
     navpart3.style.flexDirection = "column";
 
     isMenuOpen = false; // Update the state
