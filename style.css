@@ -1109,6 +1109,10 @@ footer h3{
         height: 60vh;
         width: 100vw;
     }
+    .section1 #icons2{
+	    opacity: 1;
+	    transition: opacity o.4s linear;
+    }
     .section1 .intro{
 	    opacity: 1;
 	    transition: opacity o.4s linear;
