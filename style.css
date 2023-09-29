@@ -1013,7 +1013,7 @@ footer h3{
 	    display: none;
     }
     #section3{
-	    display: unset;
+	    display: block;
     }
     
     body{
