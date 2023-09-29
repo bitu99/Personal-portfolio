@@ -18,7 +18,7 @@ function toggle(){
         
         navpart3.style.width = "50vw";
         intro.style.opacity = "0.3";
-        sec1.style.opacity = "0.3";
+        sec1_img.style.opacity = "0.3";
     }
     else { // if is menuBox hidden, display it
         menuBtn.style.display = "block";
@@ -32,7 +32,7 @@ function toggleOff(){
 
         navpart3.style.width = "0";
         intro.style.opacity = "1";
-        sec1.style.opacity = "1";
+        sec1_img.style.opacity = "1";
     }
     else { // if is menuBox hidden, display it
         cancelBtn.style.display = "block";
