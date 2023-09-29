@@ -3,7 +3,8 @@ var navpart3 = document.querySelector(".nav-part3");
 var navpart2 = document.querySelector(".nav-part2");
 var cancelBtn = document.querySelector(".ri-close-fill");
 var intro = document.querySelector(".intro");
-var sec1_img = document.querySelecctor(".sec1-img");
+var sec1_img = document.querySelector(".sec1-img");
+
 // var toggleNavStatus = false;
 console.log("1");
 
@@ -15,8 +16,10 @@ function toggle(){
         menuBtn.style.display = "none";
         cancelBtn.style.display = "block";
         navpart2.style.display = "none";
+
+        console.log("menu clicked");
         
-        navpart3.style.width = "50vw";
+        navpart3.style.width = "45vw";
         intro.style.opacity = "0.3";
         sec1_img.style.opacity = "0.3";
     }
@@ -29,13 +32,14 @@ function toggleOff(){
     if(cancelBtn.style.display == "block") { // if is menuBox displayed, hide it
         cancelBtn.style.display = "none";
         menuBtn.style.display = "block";
-
         navpart3.style.width = "0";
         intro.style.opacity = "1";
         sec1_img.style.opacity = "1";
+
+
+        navpart3.style.flexDirection = "column";
     }
     else { // if is menuBox hidden, display it
         cancelBtn.style.display = "block";
     }
 }
-
