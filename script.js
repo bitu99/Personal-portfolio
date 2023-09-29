@@ -2,6 +2,8 @@ var menuBtn = document.querySelector(".ri-menu-line");
 var navpart3 = document.querySelector(".nav-part3");
 var navpart2 = document.querySelector(".nav-part2");
 var cancelBtn = document.querySelector(".ri-close-fill");
+var intro = document.querySelector(".intro");
+var sec1_img = document.querySelecctor(".sec1-img");
 // var toggleNavStatus = false;
 console.log("1");
 
@@ -15,6 +17,8 @@ function toggle(){
         navpart2.style.display = "none";
         
         navpart3.style.width = "50vw";
+        intro.style.opacity = "0.3";
+        sec1.style.opacity = "0.3";
     }
     else { // if is menuBox hidden, display it
         menuBtn.style.display = "block";
@@ -27,6 +31,8 @@ function toggleOff(){
         menuBtn.style.display = "block";
 
         navpart3.style.width = "0";
+        intro.style.opacity = "1";
+        sec1.style.opacity = "1";
     }
     else { // if is menuBox hidden, display it
         cancelBtn.style.display = "block";
