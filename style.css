@@ -72,6 +72,10 @@ ul{
     font-family: poppins;
 }
 
+.nav-part3{
+	display:none;
+}
+
 .nav-part2 button{
     background: none;
 	color: inherit;
@@ -1041,6 +1045,7 @@ footer h3{
     }
 
     .nav-part3{
+	display: unset;
         border-top-left-radius: 50px ;
         border-bottom-left-radius: 50px ;
         position: absolute;
