@@ -507,7 +507,7 @@ ul{
     width: 25%;
     height: 95%;
     backdrop-filter: blur(6px);
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     background: #ffffff;
     -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
