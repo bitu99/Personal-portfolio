@@ -12,6 +12,10 @@ html{
     scroll-behavior:smooth;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 button{
     transition: transform 0.3s linear;
 }
