@@ -45,48 +45,26 @@ function toggleOff() {
 }
 
 
-// var menuBtn = document.querySelector(".ri-menu-line");
-// var navpart3 = document.querySelector(".nav-part3");
-// var navpart2 = document.querySelector(".nav-part2");
-// var cancelBtn = document.querySelector(".ri-close-fill");
-// var intro = document.querySelector(".intro");
-// var sec1_img = document.querySelector(".sec1-img");
+// Initialize Email.js with your user ID
+emailjs.init("user12345");  // Replace "user12345" with your actual user ID
 
-// // var toggleNavStatus = false;
-// console.log("1");
+// Handle form submission
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission
 
-// menuBtn.addEventListener("click", toggle);
-// cancelBtn.addEventListener("click", toggleOff);
+    // Get form data
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-// function toggle(){
-//     if(menuBtn.style.display == "block") { // if is menuBox displayed, hide it
-//         menuBtn.style.display = "none";
-//         cancelBtn.style.display = "block";
-//         navpart2.style.display = "none";
-
-//         console.log("menu clicked");
-        
-//         navpart3.style.width = "45vw";
-//         intro.style.opacity = "0.3";
-//         sec1_img.style.opacity = "0.3";
-//     }
-//     else { // if is menuBox hidden, display it
-//         menuBtn.style.display = "block";
-//     }
-// }
-
-// function toggleOff(){
-//     if(cancelBtn.style.display == "block") { // if is menuBox displayed, hide it
-//         cancelBtn.style.display = "none";
-//         menuBtn.style.display = "block";
-//         navpart3.style.width = "0";
-//         intro.style.opacity = "1";
-//         sec1_img.style.opacity = "1";
-
-
-//         navpart3.style.flexDirection = "column";
-//     }
-//     else { // if is menuBox hidden, display it
-//         cancelBtn.style.display = "block";
-//     }
-// }
+    // Send the email using your service and template IDs
+    emailjs.send("gmail_service", "contact_form_template", {
+        name: name,
+        email: email,
+        message: message
+    }).then(function(response) {
+        alert("Email sent successfully!");
+    }, function(error) {
+        alert("Email could not be sent. Please try again later.");
+    });
+});
