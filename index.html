@@ -6,19 +6,13 @@
     <title>Personal portfolio</title>
     <link rel="stylesheet" href="style.css"><!DOCTYPE html>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio</title>
+    
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/de8496d5b8.js" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de8496d5b8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navbar">
@@ -275,16 +269,24 @@
             <h1 style="font-size: 4vh;">Drop me a message</h1><br>
         
             <form action="https://formspree.io/f/xeqbplqb"
-            method="POST" autocomplete="off">
-                <input type="text" name="name" placeholder="Your name">
+            method="POST" autocomplete="on" id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your name">
         
-                <input type="email" name="email" placeholder="Your email">
+                <input type="email" id="email" name="email" placeholder="Your email">
         
-                <textarea type="text" name="message" ></textarea>
+                <textarea type="text" id="message" name="message" ></textarea>
         
                 <input type="submit" id="submit-btn" value="Send" placeholder="message">
             </form>
         </div>
+        <!-- Add this code to your HTML -->
+        <div id="custom-modal" class="modal">
+              <div class="modal-content">
+              <span class="close" id="close-modal">X</span>
+              <p>Email sent successfully!</p>
+        </div>
+</div>
+
     </section>
 
     <!-- ------------footer------------- -->

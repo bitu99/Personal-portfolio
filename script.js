@@ -45,8 +45,20 @@ function toggleOff() {
 }
 
 
-// Initialize Email.js with your user ID
-emailjs.init("user12345");  // Replace "user12345" with your actual user ID
+// Initialize Email.js with your User ID
+emailjs.init("_KuqdigLOlM1Hj2zQ"); // Replace with your actual User ID
+
+function showModal() {
+  document.getElementById('custom-modal').style.display = 'block';
+
+  // Automatically close the modal after 3 seconds (adjust as needed)
+  setTimeout(function() {
+      closeModal();
+  }, 3000);
+}
+function closeModal() {
+  document.getElementById('custom-modal').style.display = 'none';
+}
 
 // Handle form submission
 document.getElementById("contact-form").addEventListener("submit", function (e) {
@@ -57,14 +69,18 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Send the email using your service and template IDs
-    emailjs.send("gmail_service", "contact_form_template", {
+    // Send the email using your Service ID and Template ID
+    emailjs.send("service_4xaujkf", "template_gbk3vfh", {
         name: name,
         email: email,
         message: message
     }).then(function(response) {
-        alert("Email sent successfully!");
+      showModal();
     }, function(error) {
         alert("Email could not be sent. Please try again later.");
     });
+});
+
+document.getElementById('close-modal').addEventListener('click', function() {
+  closeModal();
 });
